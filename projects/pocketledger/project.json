@@ -1,0 +1,49 @@
+{
+  "slug": "pocketledger",
+  "title": "Pocket Ledger",
+  "tagline": "Know where your money goes.",
+  "noun": "transaction",
+  "port": 8002,
+  "color": "#b7b5ff",
+  "fields": [
+    {
+      "name": "description",
+      "label": "Description",
+      "type": "text",
+      "max": 120
+    },
+    {
+      "name": "kind",
+      "label": "Type",
+      "type": "select",
+      "options": [
+        "Expense",
+        "Income"
+      ]
+    },
+    {
+      "name": "category",
+      "label": "Category",
+      "type": "select",
+      "options": [
+        "Food",
+        "Transport",
+        "School",
+        "Shopping",
+        "Salary",
+        "Other"
+      ]
+    },
+    {
+      "name": "amount",
+      "label": "Amount (NGN)",
+      "type": "money"
+    },
+    {
+      "name": "date",
+      "label": "Date",
+      "type": "date"
+    }
+  ],
+  "features": "Record income and expenses, organize categories, filter records and see income, spending and net balance. Amounts are stored as integer kobo."
+}
